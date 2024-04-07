@@ -18,19 +18,27 @@ ul li a {
     text-decoration: none;
     color: black;
 }
-.navi{
+.navi {
+
+    font-family: 'Inter Variable Font', sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header {
-    background-color: #ffbf00; 
+    background-image: url('back1.png');
+    background-size: cover; /* Adjusts the background image size to cover the entire element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center;
+  
     padding: 10px 0; 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 .social-icons {
     margin-top: 10px;
+    display: flex;
 }
 .social-icons a {
     display: inline-block;
@@ -64,7 +72,21 @@ header {
     background-color: #f0f0f0;
     flex-basis: 25%;
 }
+.logo{
+    display: flex;
+    float:left;
+}@font-face {
+    font-family: 'Inter Variable Font';
+    src: url('path/to/Inter-VariableFont_slnt,wght.tff') format('truetype');
+    font-weight: 400; /* Specify the font weight */
+    font-style: normal; /* Specify the font style */
+    font-display: swap;
+}
 
+/* Apply the font to the desired elements */
+.logo h1 {
+    font-family: 'Inter Variable Font', sans-serif;
+}
 .bottom-content {
     background-color: #e0e0e0;
     flex-basis: 75%;
@@ -118,6 +140,11 @@ footer {
 /* Style for teacher info */
 .teacher-info {
     padding: 20px;
+    
+}
+.teacher-info a {
+    font-family: 'Inter Variable Font', sans-serif;
+    text-decoration: none;
 }
 
 /* Style for teacher name */
