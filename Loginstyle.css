@@ -4,14 +4,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
-  background: #dfe9f5;
+body {
+    background-image: url('loginbackground.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
 .Huree{
   width: 350px;
   padding: 2rem 0 1rem 0;
   margin: 50px auto;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  background-image: url('Hureebackground.jpg');
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 5px 10px;
@@ -36,7 +40,7 @@ form input{
 }
 .recover a{
   text-decoration: none;
-  color: black;
+  color: #dfe9f5;
 }
 button.signin{
   font-size: 1.1rem;
@@ -68,6 +72,7 @@ button:hover{
 .or{
   font-size: 0.8rem;
   margin-top: 1.5rem;
+  color: #dfe9f5;
 }
 .icons i{
   color: black;
@@ -76,10 +81,20 @@ button:hover{
   margin-left: 0.9rem;
   font-size: 1.5rem;
   cursor: pointer;
-  border: 2px solid #dfe9f5;
+  background-color: #dfe9f5;
+  border: 2px solid black;
+}
+.register{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+  color: #dfe9f5;
+}
+.register a{
+  color: tomato;
+  text-decoration: none;
 }
 .icons i:hover{
   color: white !important;
-  background: black;
+  background: tomato;
   transition: 1s;
 }
