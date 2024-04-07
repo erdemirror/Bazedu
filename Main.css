@@ -16,3 +16,27 @@ ul li a {
     justify-content: space-between;
     align-items: center;
 }
+header {
+    background-color: #ffbf00; 
+    padding: 10px 0; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s ease; 
+}
+.social-icons a:hover img {
+    border-color: #333; 
+}
