@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="Home.html">Нүүр</a></li>
                 <li><a href="#">Анги</a></li>
-                <li><a href="#">Мэдлэг</a></li>
+                <li><a href="#">Танин мэдэхүй</a></li>
                 <li><a href="teachers.html">Бидний тухай</a></li>
                 <li><a href="Login.html" class="signin-bth">Нэвтрэх</a></li>
                 </ul>
@@ -54,8 +54,44 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam iusto assumenda quae minima, aspernatur, animi magnam aliquid doloribus, eligendi minus quo aperiam provident molestiae voluptate odio esse sint pariatur.</p>
         </div>
         <div class="bottom-content">
-
+            <img src="baz.png" alt="logo" width="150">
+            <img src="baz.png" alt="logo" width="150">
+            <img src="baz.png" alt="logo" width="150">
+            <img src="baz.png" alt="logo" width="150">
+            <img src="baz.png" alt="logo" width="150">
+            <img src="baz.png" alt="logo" width="150">
+            
     </div>
+    <script>
+        // Function to fetch and display teacher info
+        function displayTeacherInfo() {
+            // Fetch teachers.html content
+            fetch('teachers.html')
+                .then(response => response.text())
+                .then(data => {
+                    // Create a temporary div element to hold the content of teachers.html
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data;
+
+                    // Select all teacher-info elements from the temp div
+                    const teacherInfoElements = tempDiv.querySelectorAll('.teacher-info');
+
+                    // Select the container where we want to display teacher info
+                    const teachersContainer = document.getElementById('teachersContainer');
+
+                    // Loop through teacher-info elements and append them to the container
+                    teacherInfoElements.forEach(teacherInfo => {
+                        teachersContainer.appendChild(teacherInfo);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching teacher info:', error);
+                });
+        }
+
+        // Call the function to display teacher info when the page loads
+        displayTeacherInfo();
+    </script>
     <footer>
         <p>&copy; 2024 BAZeducation. All rights reserved.</p>
     </footer>
