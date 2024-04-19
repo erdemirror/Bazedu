@@ -1,6 +1,11 @@
 body{
     margin: 0; 
     padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    flex-direction: column;
 }
 ul { 
     display: flex;
@@ -11,9 +16,196 @@ ul li a {
     padding : 0 20px;
     display: inline-block;
     text-decoration: none;
+    color: black;
 }
-.navi{
+.navi {
+
+    font-family: 'Inter Variable Font', sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header {
+    background-image: url('back1.png');
+    background-size: cover; /* Adjusts the background image size to cover the entire element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center;
+  
+    padding: 10px 0; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    transition: border-color 0.3s ease; 
+}
+.social-icons a:hover img {
+    border-color: #333; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-content, .bottom-content {
+    flex-grow: 1;
+    overflow-y: auto; 
+}
+
+
+.top-content {
+    background-color: #f0f0f0;
+    flex-basis: 25%;
+}
+.logo{
+    display: flex;
+    float:left;
+}@font-face {
+    font-family: 'Inter Variable Font';
+    src: url('path/to/Inter-VariableFont_slnt,wght.tff') format('truetype');
+    font-weight: 400; /* Specify the font weight */
+    font-style: normal; /* Specify the font style */
+    font-display: swap;
+}
+
+/* Apply the font to the desired elements */
+.logo h1 {
+    font-family: 'Inter Variable Font', sans-serif;
+}
+.bottom-content {
+    background-color: #e0e0e0;
+    flex-basis: 75%;
+    
+}
+li a::after{
+    content:'';
+    display:block;
+    height:4px;
+    width: 0;
+    background: #101013;
+    transition: all .5s;
+}
+li a:hover::after{
+width: 100%;
+}
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+.teachers {
+    margin-top: 20px;
+}
+.teachers .row {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute items evenly with space between */
+}
+.container .row {
+        display: flex; /* Use flexbox to arrange items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        justify-content: space-around; /* Distribute items evenly with space between */
+
+}
+.teacher-section {
+    float: left;
+    padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.teacher-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+.teacher-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teacher-info {
+    text-align: center;
+}
+.teacher-bio {
+    text-align: center;
+    font-style: italic;
+}
+
+.teacher {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 250px;
+    flex: 1 0 auto; /* Allow flexibility within flex container */
+}
+
+
+/* Style for teacher image */
+.teacher-img img {
+    display: block;
+    width: 200px; /* Ensure the image fills its container */
+    height: 200px; /* Set a specific height */
+
+}
+
+/* Style for teacher info */
+.teacher-info {
+    padding: 20px;
+    
+}
+.teacher-info a {
+    font-family: 'Inter Variable Font', sans-serif;
+    text-decoration: none;
+}
+
+/* Style for teacher name */
+.teacher-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Style for teacher category */
+.teacher-info--category {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Hover effect for teacher cards */
+.teacher:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
