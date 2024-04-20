@@ -90,8 +90,13 @@ header {
 .bottom-content {
     background-color: #e0e0e0;
     flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+
     
 }
+
 li a::after{
     content:'';
     display:block;

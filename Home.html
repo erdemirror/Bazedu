@@ -46,45 +46,43 @@
         <div class="top-content">
             <h2>Welcome to BAZeducation!</h2>    
         </div>
-        <div class="bottom-content">
-            <img src="baz.png" alt="logo" width="150">
-            <img src="baz.png" alt="logo" width="150">
-            <img src="baz.png" alt="logo" width="150">
-            <img src="baz.png" alt="logo" width="150">
-            <img src="baz.png" alt="logo" width="150">
-            <img src="baz.png" alt="logo" width="150">
-            
-    </div>
-    <script>
-        // Function to fetch and display teacher info
-        function displayTeacherInfo() {
-            // Fetch teachers.html content
+        <div class="bottom-content" id="teacher-info">
+            <!-- Teacher info goes here -->
+        </div>
+    
+        <script>
+            // Fetch the content of Teachers.html
             fetch('teachers.html')
                 .then(response => response.text())
                 .then(data => {
-                    // Create a temporary div element to hold the content of teachers.html
-                    const tempDiv = document.createElement('div');
+                    // Create a temporary div to hold the content of Teachers.html
+                    let tempDiv = document.createElement('div');
                     tempDiv.innerHTML = data;
-
-                    // Select all teacher-info elements from the temp div
-                    const teacherInfoElements = tempDiv.querySelectorAll('.teacher-info');
-
-                    // Select the container where we want to display teacher info
-                    const teachersContainer = document.getElementById('teachersContainer');
-
-                    // Loop through teacher-info elements and append them to the container
-                    teacherInfoElements.forEach(teacherInfo => {
-                        teachersContainer.appendChild(teacherInfo);
+                    
+                    // Extract teacher cards from the temporary div
+                    let teacherCards = tempDiv.querySelectorAll('.teacher');
+        
+                    // Append the teacher cards to the bottom-content div
+                    let bottomContent = document.getElementById('teacher-info');
+                    teacherCards.forEach(teacherCard => {
+                        bottomContent.appendChild(teacherCard.cloneNode(true));
                     });
+        
+                    // Add CSS styles for teacher images
+                    let style = document.createElement('style');
+                    style.textContent = `
+                        .teacher-img img {
+                            width: 100%; /* Make sure the images take up the full width of their container */
+                            height: auto; /* Maintain aspect ratio */
+                        }
+                    `;
+                    document.head.appendChild(style);
                 })
-                .catch(error => {
-                    console.error('Error fetching teacher info:', error);
-                });
-        }
-
-        // Call the function to display teacher info when the page loads
-        displayTeacherInfo();
-    </script>
+                .catch(error => console.error('Error fetching teacher data:', error));
+        </script>
+        
+        
+    
     <footer>
         <p>&copy; 2024 BAZeducation. All rights reserved.</p>
     </footer>
