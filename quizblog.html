@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Main.css">
+    <style>
+        /* Additional CSS styles go here */
+        .news-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+        .news-item img {
+            width: 170px; /* Adjust the width as needed */
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .news-item:hover img {
+            transform: scale(1.1);
+        }
+        .news-item:hover {
+            transform: scale(1.1);
+        }
+        .news-content {
+            flex: 1;
+        }
+    </style>
+    <title>BAZeducation</title>
+</head>
+<body>
+    <header>
+        <div class="navi">
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="baz.png" alt="logo" width="150">
+                </a>
+                <h1>BASIC <br>ACTUAL <br> ZEBRA</h1>
+            </div>
+            <nav>
+                <ul>
+                <li><a href="Home.html">Нүүр</a></li>
+                <li><a href="#">Анги</a></li>
+                <li><a href="quizblog.html">Танин мэдэхүй</a></li>
+                <li><a href="teachers.html">Бидний тухай</a></li>
+                <li><a href="Login.html" class="signin-bth">Нэвтрэх</a></li>
+                </ul>
+            </nav>
+            <!-- Social media icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/baterdem.bazar"><img src="fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/erdemirror"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"><img src="youtube.png" alt="YouTube"></a>
+               
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="news-container">
+        <div class="news-item">
+            <img src="news1.jpg" alt="News 1">
+            <div class="news-content">
+                <h2>Нигерийн шатрын аварга 58 цаг тасралтгүй тоглосны эцэст дээд амжилтыг эвджээ</h2>
+                <p>Нигерийн шатрын аварга 58 цаг тасралтгүй тоглосны эцэст шатрын марафон гүйлтийн дээд амжилтыг эвджээ.
+
+                    29 настай Тунде Онакоя лхагва гарагт Нью-Йоркийн Таймс Скверт марафон гүйлтийн сессийг эхлүүлсэн. Тэрээр бямба гарагийн үүрээр 58 цагийн амжилт үзүүлж, шатрын марафон гүйлтийн одоогийн дээд амжилтыг 2018 онд Норвегийн Халлвард Хауг Флатебё, Шюр Феркингстад нарын 56 цаг 9 минут 37 секундээр ахиуллаа.
+                    
+                    “Би яг одоо мэдэрч буй олон сэтгэл хөдлөлөө боловсруулж чадахгүй байна. Надад тэдэнд тохирох үг алга. Гэхдээ бид үнэхээр гайхалтай зүйл хийснээ мэдэж байна” гэж Франс Пресс агентлагт ярьжээ.
+                    
+                    “Өчигдөр шөнийн гурван цагт би бүх зүйлээ орхиход бэлэн байсан үе байсан ... гэхдээ Нигерчүүд дэлхийн өнцөг булан бүрээс аялсан. Тэгээд тэд шөнөжин надтай хамт байсан.
+                    
+                    "Бид хамтдаа дуулж байсан, тэд хамтдаа бүжиглэж байсан, би зүгээр л тэднээс татгалзаж чадаагүй.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="news2.jpg" alt="News 2">
+            <div class="news-content">
+                <h2>ШУВУУНЫ ЖИНГ МЭДЭХ ХЭРЭГТЭЙ ЮУ?</h2>
+                <p>Өвлийн улиралд умардын их ойгоос манайд зочлон ирдэг хэдэн шувуухайн нэг улаан зулайт Дөлөн цэгцүүхэй. Бор шувуунаас жижиг нэгэн, дээд талдаа л баавгайтай орос ганц чихрийн хэмжээний жин татдаг (15 гр.) учраас бор өвсний үзүүрт зүүгдээд идээшлээд явдаг. Агаарт дүүлж нисч амьдардаг шувуу ер нь их хөнгөн, хүмүүн биднийг бодвол элдэв хүнд яс, илүү өөх, гүзээ байхгүй, турах гэж оролдох хэрэггүй.
+
+                    Ачаа дүүрэн тагтаа зөөж буй том тэрэгний нийт жин нь бүх тагтаа нь зэрэг агаарт дэрвээд эхлэвэл өөрчлөгдөх үү, үгүй юу гэсэн физикийн оньсого 
+                    байсан. Хэдэн жилийн өмнө Стэнфордын их сургуулийн судлаачид маш нарийн хэмжих багаж хийж, туршсан ажээ. Шувуу дээш дэрвэхэд жингүй болох мэт 
+                    боловч далавчаа доош дэвэхэд өөрийн жингээс хоёр дахин илүү даралт үүсгэхээр уг нь машины жин өөрчлөгдөх ёстой. Гэвч олон шувуу нэгэн зэрэг
+                     нисч дээш эсвэл доошоо дэрвэхгүй учраас жин тэнцэнэ гэж. Энэ
+                     бүхэн ямар хэрэгтэй юм гэвэл овор багатай нисдэг төхөөрөмж, дрон зохион бүтээхэд ийм судалгаа туршилт хэрэг болсон ажээ.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="news2.jpg" alt="News 2">
+            <div class="news-content">
+                <h2>News Title 2</h2>
+                <p>Description of news item 2.</p>
+            </div>
+        </div><div class="news-item">
+            <img src="news1.jpg" alt="News 2">
+            <div class="news-content">
+                <h2>News Title 2</h2>
+                <p>Description of news item 2.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="news1.jpg" alt="News 2">
+            <div class="news-content">
+                <h2>News Title 2</h2>
+                <p>Description of news item 2.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
