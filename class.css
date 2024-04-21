@@ -1,13 +1,12 @@
 body{
     margin: 0; 
     padding: 0;
-    font-family: "Varela Round", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
     flex-direction: column;
 }
-
 ul { 
     display: flex;
     list-style-type: none;
@@ -28,8 +27,8 @@ ul li a {
 }
 header {
     background-image: url('back1.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
   
     padding: 10px 0; 
@@ -76,9 +75,8 @@ header {
     display: flex;
     float:left;
 }
-
 .logo h1 {
-    font-family: "Varela Round", sans-serif;
+    font-family: "Exo 2", sans-serif;
 }
 .bottom-content {
     background-color: #e0e0e0;
@@ -107,94 +105,44 @@ footer {
     padding: 20px; 
     text-align: center; 
 }
-.teachers {
-    font-family: "Exo 2", sans-serif;
-    margin-top: 20px;
-}
-.teachers .row {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-}
-.container .row {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-around; 
 
-}
-.teacher-section {
-    float: left;
-    padding-left: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.teacher-circle {
+.container {
+    padding: 10px;
+    margin:30px auto;
+    margin-left: 45px;
+    display: inline-block;
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    
+    display: flex;
 }
 
-.teacher-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.teacher-info {
-    text-align: center;
-    font-family: "Exo 2", sans-serif;
-}
-.teacher-bio {
-    text-align: center;
-    font-style: italic;
-}
-
-.teacher {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 100%; 
-    max-width: 250px;
-    flex: 1 0 auto;
-}
-.teacher-img img {
+.container img {
+    width: 200px; 
+    height: 200px; 
     display: block;
-    width: 200px;
-    height: 200px;
+    border-radius: 10%;
+        }
+.info,h1{
+    margin-top:0px;
+}
+.info h1, .info h4 {
+    margin: 0; 
+}
 
+
+.lesson {
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    padding: 10px; 
+    box-sizing: border-box;
 }
-.teacher-info {
-    padding: 20px;
-    
+
+.lesson:hover img {
+    transform: scale(1.01);
 }
-.teacher-info a {
+.lesson:hover {
+    transform: scale(1.01);
+}
+.info{
     font-family: "Exo 2", sans-serif;
-    text-decoration: none;
-}
-.teacher-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
-.teacher-info--category {
-    color: #888;
-    font-size: 14px;
-}
-.teacher:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
-}
-@media (max-width: 768px) {
-    .col-sm-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
 }
