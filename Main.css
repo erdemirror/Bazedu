@@ -6,6 +6,7 @@ body{
     font-style: normal;
     min-height: 100vh;
     flex-direction: column;
+    
 }
 
 ul { 
@@ -59,19 +60,28 @@ header {
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    
 }
 
 .top-content, .bottom-content {
     flex-grow: 1;
-    overflow-y: auto; 
+   
 }
 
 
 .top-content {
-    background-color: #f0f0f0;
-    flex-basis: 25%;
+    position: relative;
+     /* Set the height of the container to the full viewport height */
+    overflow: auto; /* Enable scrolling if content overflows */
 }
+
+.top-content img {
+    width: 100%; /* Set the width of the image to fill the container */
+    height: auto; /* Allow the height of the image to adjust proportionally */
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+
 .logo{
     display: flex;
     float:left;
@@ -192,7 +202,7 @@ footer {
 }
 @media (max-width: 768px) {
     .col-sm-6 {
-        flex: 0 0 50%;
+        flex: 0 0 50%;  
         max-width: 50%;
     }
 }
