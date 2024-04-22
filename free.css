@@ -1,18 +1,18 @@
-.logo h1 {
+.logo h1{
     margin-top:21.44px;
 }
 .container {
     padding: 10px;
     margin:30px auto;
-    margin-left: 45px;
+    margin-left: 90px;
     display: inline-block;
-    width: 300px;
+    width: 1000px;
     display: flex;
 }
 
 .container img {
-    width: 200px; 
-    height: 200px; 
+    width: 400px; 
+    height: 400px; 
     display: block;
     border-radius: 10%;
         }

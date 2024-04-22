@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="free.css">
     <title>BAZeducation</title>
     <style>
     </style>
@@ -19,7 +20,7 @@
                 <a href="Home.html">
                     <img src="baz.png" alt="logo" width="150">
                 </a>
-                <h1>Bright   <br>Academic <br> Zone</h1>
+                <h1>Bright<br>Academic<br>Zone</h1>
             </div>
             <nav>
                 <ul>
@@ -42,50 +43,44 @@
                 <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"><img src="youtube.png" alt="YouTube"></a>
                
             </div>
-            
         </div>
     </header>
-    <div class="main-content">
-        <div class="top-content">
-            <h2>Welcome to BAZeducation!</h2>    
+    <div class="container">
+        <div class="lesson" id="math">
+            <div class="image">
+                <img src="math.jpg" alt="Math Image" >
+            </div>
+            <hr>
+            <div class="info">
+                <h1>Математик-IV анги</h1>
+                <h4>Б.Бат-Эрдэм</h4>
+                <p></p>
+            </div>
         </div>
-        <div class="bottom-content" id="teacher-info">
-            <!-- Teacher info goes here -->
+        <div class="lesson" id="math">
+            <div class="image">
+                <img src="math.jpg" alt="Math Image" >
+            </div>
+            <hr>
+            <div class="info">
+                <h1>Математик-IV анги</h1>
+                <h4>Б.Бат-Эрдэм</h4>
+                <p></p>
+            </div>
         </div>
-    
-        <script>
-            // Fetch the content of Teachers.html
-            fetch('teachers.html')
-                .then(response => response.text())
-                .then(data => {
-                    // Create a temporary div to hold the content of Teachers.html
-                    let tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = data;
-                    
-                    // Extract teacher cards from the temporary div
-                    let teacherCards = tempDiv.querySelectorAll('.teacher');
-        
-                    // Append the teacher cards to the bottom-content div
-                    let bottomContent = document.getElementById('teacher-info');
-                    teacherCards.forEach(teacherCard => {
-                        bottomContent.appendChild(teacherCard.cloneNode(true));
-                    });
-        
-                    // Add CSS styles for teacher images
-                    let style = document.createElement('style');
-                    style.textContent = `
-                        .teacher-img img {
-                            width: 100%; /* Make sure the images take up the full width of their container */
-                            height: auto; /* Maintain aspect ratio */
-                        }
-                    `;
-                    document.head.appendChild(style);
-                })
-                .catch(error => console.error('Error fetching teacher data:', error));
-        </script>
-        
-        
-    
+        <div class="lesson" id="math">
+            <div class="image">
+                <img src="math.jpg" alt="Math Image" >
+            </div>
+            <hr>
+            <div class="info">
+                <h1>Математик-IV анги</h1>
+                <h4>Б.Бат-Эрдэм</h4>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
     <footer>
         <p>&copy; 2024 BAZeducation. All rights reserved.</p>
     </footer>

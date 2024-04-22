@@ -85,9 +85,7 @@ header {
     flex-basis: 75%;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-around; 
-
-    
+    justify-content: space-around;     
 }
 
 li a::after{
@@ -198,3 +196,26 @@ footer {
         max-width: 50%;
     }
 }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:10px;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
