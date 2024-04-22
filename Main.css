@@ -6,7 +6,6 @@ body{
     font-style: normal;
     min-height: 100vh;
     flex-direction: column;
-    
 }
 
 ul { 
@@ -32,7 +31,6 @@ header {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
-  
     padding: 10px 0; 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -71,14 +69,13 @@ header {
 
 .top-content {
     position: relative;
-     /* Set the height of the container to the full viewport height */
-    overflow: auto; /* Enable scrolling if content overflows */
+    overflow: auto; 
 }
 
 .top-content img {
-    width: 100%; /* Set the width of the image to fill the container */
-    height: auto; /* Allow the height of the image to adjust proportionally */
-    display: block; /* Ensure the image behaves as a block element */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 
@@ -114,6 +111,9 @@ footer {
     color: #fff; 
     padding: 20px; 
     text-align: center; 
+    position:fixed;
+    width: 100%;
+    bottom:0;
 }
 .teachers {
     font-family: "Exo 2", sans-serif;
