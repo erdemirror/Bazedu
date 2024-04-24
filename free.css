@@ -1,43 +1,47 @@
-.logo h1{
-    margin-top:21.44px;
+.logo h1 {
+  margin-top: 21.44px;
+}
+a {
+  text-decoration: none;
 }
 .container {
-    padding: 10px;
-    margin:30px auto;
-    margin-left: 90px;
-    display: inline-block;
-    width: 1000px;
-    display: flex;
+  padding: 10px;
+  margin: 30px auto;
+  margin-left: 90px;
+  display: inline-block;
+  width: 1000px;
+  display: flex;
 }
 
 .container img {
-    width: 400px; 
-    height: 400px; 
-    display: block;
-    border-radius: 10%;
-        }
-.info,h1{
-    margin-top:0px;
+  width: 400px;
+  height: 400px;
+  display: block;
+  border-radius: 10%;
 }
-.info h1, .info h4 {
-    margin: 0; 
+.info,
+h1 {
+  margin-top: 0px;
 }
-
+.info h1,
+.info h4 {
+  margin: 0;
+}
 
 .lesson {
-    border-radius: 10px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-right: 20px;
-    padding: 10px; 
-    box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .lesson:hover img {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 .lesson:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
-.info{
-    font-family: "Exo 2", sans-serif;
+.info {
+  font-family: "Exo 2", sans-serif;
 }
