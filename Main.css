@@ -121,10 +121,15 @@ footer {
 .ques{
     background-color: orange;
     width:90%;
-    border-radius: 30px;
+    border-radius: 80px;
     display:flex;
     margin:10px;
     padding:80px;
+    margin: auto;
+}
+.ques1{
+    font-family: "Varela Round", sans-serif;
+    color:white;
 }
 .ques2{
     display: flex;
@@ -162,4 +167,24 @@ footer {
   }
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .first{
+    padding-bottom:30px;
+    
+  }
+  #fname{
+    margin-right:15px;
+    padding-right:60px;
+    border-radius:10px;
+    border:0;
+  }
+  #emails{
+    padding-right:60px;
+    border-radius:10px;
+    border:0;
+  }
+  #review{
+    border-radius:10px;
+    border:0;
   }
