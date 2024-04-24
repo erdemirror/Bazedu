@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    if (window.scrollY > 100) {
+    if (window.scrollY > 500) {
         scrollToTopBtn.style.display = 'block';
     } else {
         scrollToTopBtn.style.display = 'none';
