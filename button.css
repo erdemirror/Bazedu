@@ -1,13 +1,13 @@
 .button {
   display: inline-block;
   border-radius: 50px;
-  background-color: #f4511e;
+  background-color: orange;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 15px;
   padding: 20px;
-  width: 150px;
+  width: 160px;
   height: 55px;
   transition: all 0.5s;
   cursor: pointer;
