@@ -1,0 +1,56 @@
+.container-pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#profile{
+    border-radius: 100%;
+    border:10px rgb(216, 216, 216) solid;
+    margin-left:50px;
+    margin-top:20px;
+}
+.profile-info{
+    display: flex;
+}
+.top-info{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    margin-bottom:20px;
+}
+.lessons-list{
+    margin-top:20px;
+    margin-left:180px;
+}
+.lessons-list h1{
+    margin-bottom:20px; 
+}
+.each-lesson{
+    width:1200px;
+    height:50px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+}
+#progress{
+  width:100px;
+  height:20px;
+  background-color: #20639b;
+  border-radius: 20px;
+  color:white;
+  margin-left:980px;
+  display: flex;
+  justify-content: center;
+  float:left;
+}
+.lesson-infos{
+    margin-bottom:50px;
+}
