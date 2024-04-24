@@ -1,143 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="quiz.css" />
     <title>BAZeducation</title>
     <style>
- 
-        .news-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            padding: 20px;
-            
-        }
-        .news-item {
-            font-family: "Exo 2", sans-serif;
-            display: flex;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            transition: transform 0.3s ease;
-        }
-        .news-item img {
-            width: 170px;
-            height: auto;
-            margin-right: 20px;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-        .news-item:hover img {
-            transform: scale(1.01);
-        }
-        .news-item:hover {
-            transform: scale(1.01);
-        }
-        .news-content {
-            flex: 1;
-        }
+      .news-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+      }
+      .news-item {
+        font-family: "Exo 2", sans-serif;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        transition: transform 0.3s ease;
+      }
+      .news-item img {
+        width: 170px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+      }
+      .news-item:hover img {
+        transform: scale(1.01);
+      }
+      .news-item:hover {
+        transform: scale(1.01);
+      }
+      .news-content {
+        flex: 1;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navi">
-            <div class="logo">
-                <a href="Home.html">
-                    <img src="baz.png" alt="logo" width="150">
-                </a>
-                <h1>Bright   <br>Academic <br> Zone</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Нүүр</a></li>
-                    <li class="dropdown"><a href="classes.html">Анги</a>
-                        <div class="dropdown-content">
-                            <a href="classes.html">Үндсэн сургалт</a>
-                            <a href="freecourse.html">Үнэгүй сургалт</a>
-                          </div>
-                    </li>
-                    <li><a href="quizblog.html">Танин мэдэхүй</a></li>
-                    <li><a href="teachers.html">Бидний тухай</a></li>
-                    <li><a href="Login.html" class="signin-bth">Нэвтрэх</a></li>
-                    </ul>
-            </nav>
-            <!-- Social media icons -->
-            <div class="social-icons">
-                <a href="https://www.facebook.com/baterdem.bazar"><img src="fb.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/erdemirror"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"><img src="youtube.png" alt="YouTube"></a>
-               
-            </div>
-            
+      <div class="navi">
+        <div class="logo">
+          <a href="Home.html">
+            <img src="baz.png" alt="logo" width="150" />
+          </a>
+          <h1>
+            Bright <br />Academic <br />
+            Zone
+          </h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Нүүр</a></li>
+            <li class="dropdown">
+              <a href="classes.html">Анги</a>
+              <div class="dropdown-content">
+                <a href="classes.html">Үндсэн сургалт</a>
+                <a href="freecourse.html">Үнэгүй сургалт</a>
+              </div>
+            </li>
+            <li><a href="quizblog.html">Танин мэдэхүй</a></li>
+            <li><a href="teachers.html">Бидний тухай</a></li>
+            <li><a href="Login.html" class="signin-bth">Нэвтрэх</a></li>
+          </ul>
+        </nav>
+        <!-- Social media icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/baterdem.bazar"
+            ><img src="fb.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/erdemirror"
+            ><img src="instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"
+            ><img src="youtube.png" alt="YouTube"
+          /></a>
+        </div>
+      </div>
     </header>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Хайх..." />
+      <button type="button" id="search-button">Хайх</button>
+    </div>
 
     <div class="news-container">
-        <div class="news-item">
-            <img src="news1.jpg" alt="News 1">
-            <div class="news-content">
-                <h2>Нигерийн шатрын аварга 58 цаг тасралтгүй тоглосны эцэст дээд амжилтыг эвджээ</h2>
-                <p>Нигерийн шатрын аварга 58 цаг тасралтгүй тоглосны эцэст шатрын марафон гүйлтийн дээд амжилтыг эвджээ.
-
-                    29 настай Тунде Онакоя лхагва гарагт Нью-Йоркийн Таймс Скверт марафон гүйлтийн сессийг эхлүүлсэн. Тэрээр бямба гарагийн үүрээр 58 цагийн амжилт үзүүлж, шатрын марафон гүйлтийн одоогийн дээд амжилтыг 2018 онд Норвегийн Халлвард Хауг Флатебё, Шюр Феркингстад нарын 56 цаг 9 минут 37 секундээр ахиуллаа.
-                    
-                    “Би яг одоо мэдэрч буй олон сэтгэл хөдлөлөө боловсруулж чадахгүй байна. Надад тэдэнд тохирох үг алга. Гэхдээ бид үнэхээр гайхалтай зүйл хийснээ мэдэж байна” гэж Франс Пресс агентлагт ярьжээ.
-                    
-                    “Өчигдөр шөнийн гурван цагт би бүх зүйлээ орхиход бэлэн байсан үе байсан ... гэхдээ Нигерчүүд дэлхийн өнцөг булан бүрээс аялсан. Тэгээд тэд шөнөжин надтай хамт байсан.
-                    
-                    "Бид хамтдаа дуулж байсан, тэд хамтдаа бүжиглэж байсан, би зүгээр л тэднээс татгалзаж чадаагүй.</p>
-            </div>
+      <div class="news-item">
+        <img src="news1.png" alt="News 1" />
+        <div class="news-content">
+          <h2>
+            Flappy Effect-ийг тайлах нь: Тоглоом хийхээс эхлээд Стэнфордод код
+            бичих хүртэл
+          </h2>
+          <p>
+            Эрвээхэйний далавчны нэг далавч нь дэлхийн бусад оронд хамаагүй том
+            үр дагаварт хүргэдэг эрвээхэй эффектийн талаар ихэнх хүмүүс сонссон.
+            Гэхдээ кодчиллын ертөнцөд бага мэддэг өөр нэг үзэгдэл болох Flappy
+            эффект байж болох уу? Игорь Баракаев 13 настай байхдаа Flappy Bird
+            программыг хөгжүүлэх сонирхолтой байсан. Одоо Стэнфордын Их
+            Сургуульд компьютерийн шинжлэх ухааны чиглэлээр суралцаж буй
+            бакалаврын оюутан тэрээр онлайнаар хүүхдийн үлгэрийн ном зохиодог
+            Imaginara платформыг ажиллуулж эхэлжээ. Бид Игорьоос түүнийг хэрхэн
+            эхлүүлж, цаашид юу хийх гэж байгааг нь асууж, зоригтой байх нь хэзээ
+            ч зовдоггүйг ойлгосон! Та хэрхэн код бичиж эхэлсэн бэ? IB: Би яг он
+            цагийн хуваарийг сайн санахгүй байна, гэхдээ гар утасны тоглоомууд
+            хэрхэн хийгддэгийг маш их сонирхож, өөрөө тоглоом хийхийг оролдож
+            байснаа санаж байна. (Би тэр үед өөрөө тоглож байсан Geometry
+            Dash-ийн талаар их сонирхож байсан гэж бодож байна.) Энэ үед би
+            Flappy Bird-ийг бүтээгч Дун Нгуентэй холбоо барьж, түүнээс цааш
+            хэрхэн үргэлжлүүлэх талаар асуух нь зүйтэй болов уу гэж бодсон. Тэр
+            намайг Code.org руу зааж өгсөн. Энэ нь магадгүй харааны блокуудаар
+            дамжуулан кодчилолтой танилцсан миний хамгийн анхны нэг байсан байх.
+          </p>
         </div>
-        <div class="news-item">
-            <img src="news2.jpg" alt="News 2">
-            <div class="news-content">
-                <h2>ШУВУУНЫ ЖИНГ МЭДЭХ ХЭРЭГТЭЙ ЮУ?</h2>
-                <p>Өвлийн улиралд умардын их ойгоос манайд зочлон ирдэг хэдэн шувуухайн нэг улаан зулайт Дөлөн цэгцүүхэй. Бор шувуунаас жижиг нэгэн, дээд талдаа л баавгайтай орос ганц чихрийн хэмжээний жин татдаг (15 гр.) учраас бор өвсний үзүүрт зүүгдээд идээшлээд явдаг. Агаарт дүүлж нисч амьдардаг шувуу ер нь их хөнгөн, хүмүүн биднийг бодвол элдэв хүнд яс, илүү өөх, гүзээ байхгүй, турах гэж оролдох хэрэггүй.
-
-                    Ачаа дүүрэн тагтаа зөөж буй том тэрэгний нийт жин нь бүх тагтаа нь зэрэг агаарт дэрвээд эхлэвэл өөрчлөгдөх үү, үгүй юу гэсэн физикийн оньсого 
-                    байсан. Хэдэн жилийн өмнө Стэнфордын их сургуулийн судлаачид маш нарийн хэмжих багаж хийж, туршсан ажээ. Шувуу дээш дэрвэхэд жингүй болох мэт 
-                    боловч далавчаа доош дэвэхэд өөрийн жингээс хоёр дахин илүү даралт үүсгэхээр уг нь машины жин өөрчлөгдөх ёстой. Гэвч олон шувуу нэгэн зэрэг
-                     нисч дээш эсвэл доошоо дэрвэхгүй учраас жин тэнцэнэ гэж. Энэ
-                     бүхэн ямар хэрэгтэй юм гэвэл овор багатай нисдэг төхөөрөмж, дрон зохион бүтээхэд ийм судалгаа туршилт хэрэг болсон ажээ.</p>
-            </div>
+      </div>
+      <div class="news-item">
+        <img src="news2.png" alt="News 2" />
+        <div class="news-content">
+          <h2>AI эрин үед K-12 CS боловсролын ирээдүй юу вэ?</h2>
+          <p>
+            Generative AI нь салбаруудыг өөрчилдөг бөгөөд хиймэл оюун ухаан нь
+            ашигтай код үүсгэх чадвартай тул мэргэжлийн програм хангамж
+            хөгжүүлэгчдийн 92% нь AI хэрэгслийг аль хэдийн ашиглаж байгаад
+            гайхах зүйл алга. Компьютерийн шинжлэх ухааны (CS) боловсрол нь
+            хиймэл оюун ухааны хэрэгслүүдийг хараахан эзэмшээгүй байгаа нь
+            гайхах зүйл биш юм, учир нь анх удаа код бичиж сурах нь мэргэжлийн
+            зорилгоор код үйлдвэрлэдэг шинжээчээс тэс өөр юм. CS-ийн сурган
+            хүмүүжүүлэгчид, бүх сурган хүмүүжүүлэгчдийн дунд хиймэл оюун ухаан
+            боловсролыг өөрчилж чадна гэдгийг маш сайн мэддэг бөгөөд хиймэл оюун
+            ухааны эрин үед CS боловсролын ирээдүй ямар байх бол гэж гайхаж
+            байна.
+          </p>
         </div>
-        <div class="news-item">
-            <img src="news2.jpg" alt="News 2">
-            <div class="news-content">
-                <h2>ЭРВЭЭХЭЙН НАС</h2>
-                <p>Нүүр номын нэг танил эрвээхэйний насыг асуужээ. Өөр өөр биз, харин нэг хариу нь энэ. Хэнтийгээс таксидаж хотод ирсэн авгалдай, хүүхэлдэй болж хувирсаар өсч бие гүйцсэн гэнээ. Соно бялзуухайтай (колибри) андуурдаг шөнийн шумбуур эрвээхэй хэдхэн хоног амьдраад, үржилд ороод үхдэг гэнэ.
- 
-                    Бие гүйцсэн бодгаль нь далавчаа хурдан дэвж агаарт тогтоод, галын машиг шиг урт хушуугаа сунгаж цэцгийн бал сордог ажээ.
-                     
-                    Ер нь бүх үр хөврөлийн хугацаа нь сар гаруйхан, тухайн үедээ сайтар идэж, тэжээл хуримтуулж аваад л баяртай. Шинэ навч, цэцгийн балаар хооллодог учраас байгальд хор хөнөөл үгүй гэж уншлаа.
-                     
-                     
-                    Хэдхэн шөнө нисэхийн төлөө дөрвөн үе дамжиж хөгжих бүгэг эрвээхэйний үр хөврөл хачин, бас ч сонирхолтой, энэ эрвээхэйг байгаль эх жаахан хөгжилтэй өдрөө бүтээсэн байх ...</p>
-            </div>
-        </div><div class="news-item">
-            <img src="news1.jpg" alt="News 2">
-            <div class="news-content">
-                <h2>News Title 2</h2>
-                <p>Description of news item 2.</p>
-            </div>
+      </div>
+      <div class="news-item">
+        <img src="news3.png" alt="News 3" />
+        <div class="news-content">
+          <h2>CSEdWeek-ийг Кодын Цаг: AI ашиглан бүтээлчээр тэмдэглэ</h2>
+          <p>
+            Өнөөдөр жилийн хамгийн гайхалтай үе болох Компьютерийн шинжлэх
+            ухааны боловсролын долоо хоног эхэлж байна! Энэ баярыг тохиолдуулан
+            бид жил бүр зохион байгуулдаг Кодын цагийн хичээл буюу бүх ур
+            чадварын түвшинд зориулсан хөгжилтэй үйл ажиллагаанууд, видео
+            бичлэгүүдээр дамжуулан компьютерийн шинжлэх ухааныг үнэ төлбөргүй
+            танилцуулдаг Hour of Code: Creativity with AI ашиглан шинэ өндөрлөгт
+            хүргэж байна. Хиймэл оюун ухаан нь шинэ программууд болон
+            алгоритмуудыг кодлох, өвөрмөц урлагийг бий болгох, бүжиглэх бүжиг
+            дэглэх эсэхээс үл хамааран хиймэл оюун ухаан нь бидний бүтээлч
+            байдлын талаарх ойлголтыг өргөжүүлэх дижитал илэрхийлэлд шинэ
+            боломжийг нээж өгдөг. Ганцхан жилийн дотор хиймэл оюун ухаан бидний
+            өдөр тутмын амьдралын замналыг өөрчилсөн бөгөөд Code.org сайтаар бид
+            орчин үеийн боловсролыг технологийн дэвшлийн эрин үеийг даван
+            туулахад туслахыг хүсч байна. Энэ жилийн "Кодын цагаар"-аар оюутнууд
+            зөвхөн компьютерийн шинжлэх ухаан, кодчилолоос гадна хиймэл оюун
+            ухаан хэрхэн ажилладаг, хиймэл оюун ухааны ёс зүйн үр дагавар, бодит
+            ертөнцийн асуудлыг шийдвэрлэхэд хиймэл оюун ухааныг хэрхэн ашиглах
+            талаар суралцах боломжтой болно.
+          </p>
         </div>
-        <div class="news-item">
-            <img src="news1.jpg" alt="News 2">
-            <div class="news-content">
-                <h2>News Title 2</h2>
-                <p>Description of news item 2.</p>
-            </div>
+      </div>
+      <div class="news-item">
+        <img src="news1.jpg" alt="News 2" />
+        <div class="news-content">
+          <h2>Хиймэл оюун ухааны хувьсал</h2>
+          <p>
+            Хиймэл оюун ухаан (AI) үүсгэн байгуулагдсан цагаасаа хойш маш их
+            замыг туулсан бөгөөд 2024 онд бидний мэдэх дэлхий ертөнцийг
+            чиглүүлсээр байна. Шинжлэх ухааны зөгнөлт зохиолын үзэл баримтлал
+            болж эхэлсэн зүйл одоо бидний өдөр тутмын амьдралын салшгүй хэсэг
+            болсон. AI бол зүгээр л холын мөрөөдөл байхаа больсон; Энэ нь
+            салбарыг бүхэлд нь өөрчилсөн бодит байдал юм. Бид хиймэл оюун ухааны
+            үндэс суурь, хэрхэн ажилладаг, төрөл бүрийн салбаруудад үзүүлэх
+            нөлөө, ирээдүйд үзүүлж буй гайхалтай боломжуудыг судлах болно.
+          </p>
         </div>
+      </div>
+      <div class="news-item">
+        <img src="news1.jpg" alt="News 2" />
+        <div class="news-content">
+          <h2>Azure: IoT аюулгүй байдлын ирээдүй</h2>
+          <p>
+            Интернэт зүйлсийн сүлжээ (IoT) тоглоомыг өөрчилсөн бөгөөд энэ нь
+            салбаруудыг өөрчилж, үр ашгийг дээшлүүлж, бидний эргэн тойрон дахь
+            ертөнцтэй харилцах арга барилыг өөрчилсөн. Гэсэн хэдий ч IoT
+            төхөөрөмжүүд бидний амьдралд илүү өргөн тархах тусам тэдгээртэй
+            холбоотой аюулгүй байдлын асуудал улам бүр нэмэгдсээр байна.
+            Майкрософт компанийн үүлэн тооцоолох платформ Azure нь IoT аюулгүй
+            байдлын тэргүүн эгнээнд байж, энэхүү хурдацтай хөгжиж буй салбарын
+            ирээдүйг тодорхойлоход бэлэн байна.
+          </p>
+        </div>
+      </div>
     </div>
+    <button id="more-button">More</button>
     <footer>
-        <p>&copy; 2024 BAZeducation. All rights reserved.</p>
-    </footer>s
-</body>
+      <p>&copy; 2024 BAZeducation. All rights reserved.</p>
+    </footer>
+    s
+  </body>
 </html>

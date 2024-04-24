@@ -1,0 +1,62 @@
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#search-bar {
+  width: 500px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+#search-button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: orange;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 160px;
+  height: 55px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-button:hover {
+  padding-right: 25px;
+  background-color: #ff6600;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#search-button:hover::after {
+  opacity: 1;
+  right: 0;
+}
+#more-button {
+  display: block;
+  margin: 20px auto; /* Center the button */
+  border-radius: 50px;
+  background-color: orange;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 160px;
+  height: 55px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#more-button:hover {
+  background-color: #ff6600; /* Change color to darker on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
