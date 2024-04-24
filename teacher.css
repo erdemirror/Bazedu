@@ -1,88 +1,116 @@
 
-.teachers {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
     font-family: "Exo 2", sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Social media icons */
+.social-icons {
+    margin-left: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.teachers {
     margin-top: 20px;
 }
+
 .teachers .row {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-}
-.container .row {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-around; 
-
-}
-.teacher-section {
-    float: left;
-    padding-left: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.teacher-circle {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    
-}
-
-.teacher-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.teacher-info {
-    text-align: center;
-    font-family: "Exo 2", sans-serif;
-}
-.teacher-bio {
-    text-align: left;
-    font-family: "Exo 2", sans-serif;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .teacher {
     margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    width: 100%; 
-    max-width: 200px;
-    flex: 1 0 auto;
 }
-.teacher-img img {
-    display: block;
-    width: 200px;
-    height: 200px;
 
+.teacher-img img {
+    width: 100%;
+    height: auto;
 }
+
 .teacher-info {
-    font-family: "Exo 2", sans-serif;
-    padding: 20px;
+    padding: 10px;
+}
+
+.teacher-info a {
+    font-weight: bold;
     
 }
-.teacher-info a {
-    font-family: "Exo 2", sans-serif;
-    text-decoration: none;
-}
-.teacher-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
+
 .teacher-info--category {
     color: #888;
     font-size: 14px;
 }
+
 .teacher:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
     transition: all 0.3s ease;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
