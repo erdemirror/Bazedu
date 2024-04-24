@@ -1,0 +1,42 @@
+.button-submit {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #20639b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 0px;
+    width: 100px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    margin-left:0px;
+    
+  }
+  
+  .button-submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-submit span {
+    padding-right: 25px;
+  }
+  
+  .button-submit:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

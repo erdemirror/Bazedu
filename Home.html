@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="Main.css">
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="button-submit.css">
     <link rel="stylesheet" href="teacher.css">
     <title>BAZeducation</title>
 </head>
@@ -156,10 +157,18 @@
     </div>
     <div class="ques2">
         <div class="first">
-        <input type="text" name="fname" id="fname" maxlength="20" placeholder="Нэр">
-        <input type="email" name="emails" id="emails" placeholder="Имэйл">
+            <div class="name">
+            <p>Нэр</p>
+        <input type="text" name="fname" id="fname" maxlength="20" >
     </div>
-        <textarea id="review" name="review" rows="5" cols="60" placeholder="Зурвас"></textarea>
+    <div class="mail">
+        <p>Имэйл</p>
+        <input type="email" name="emails" id="emails" >
+    </div>
+    </div>
+        <p style="color:#747373">Зурвас</p>
+        <textarea id="review" name="review" rows="5" cols="60" ></textarea>
+        <button class="button-submit"><span>Илгээх </span></button> 
     </div>
     
 </div>
