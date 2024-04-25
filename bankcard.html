@@ -11,21 +11,29 @@
         <p><b>BAZ EDUCATION</b></p>
         <div class="bank-card-info">
             <p>Enter Your Card Details:</p>
-            <form>
-                <input type="text" placeholder="Card Number" required>
-                <input type="text" placeholder="Name on Card" required>
-                <input type="text" placeholder="Expiration Date (MM/YY)" required>
-                <input type="text" placeholder="CVV" required>
+            <form id="paymentForm">
+                <input id="cardNumber" type="number" placeholder="Card Number" required>
+                <input id="nameOnCard" type="text" placeholder="Name on Card" required>
+                <input id="expirationDate" type="date" placeholder="Expiration Date (MM/YY)" required>
+                <input id="cvv" type="number" placeholder="CVV" required>
             </form>
             <button class="pay" onclick="handlePayment()">Pay</button>
         </div>
         <script>
             function handlePayment() {
-                alert("Payment successful!");
-                window.location.href = "lesson-info-scratch.html";
+                var cardNumber = document.getElementById("cardNumber").value;
+                var nameOnCard = document.getElementById("nameOnCard").value;
+                var expirationDate = document.getElementById("expirationDate").value;
+                var cvv = document.getElementById("cvv").value;
+
+                if (cardNumber === "" || nameOnCard === "" || expirationDate === "" || cvv === "") {
+                    alert("Please fill in all the fields.");
+                } else {
+                    alert("Payment successful!");
+                    window.location.href = "lesson-info-scratch.html";
+                }
             }
         </script>
-        </div>
     </div>
 </body>
 </html>
