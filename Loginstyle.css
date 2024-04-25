@@ -8,14 +8,15 @@ body {
     background-image: url('loginbackground.jpg');
     background-size: cover;
     background-position: center;
+    font-family: "Varela Round", sans-serif;
 }
 
 .Huree{
   width: 350px;
   padding: 2rem 0 1rem 0;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.8);
-  background-image: url('Hureebackground.jpg');
+  background: rgba(192, 192, 192, 0.9);
+  filter: brightness(80%);
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 5px 10px;
@@ -44,6 +45,7 @@ form input{
 }
 button.signin{
   font-size: 1.1rem;
+  text-decoration: none;
   margin-top: 1rem;
   padding: 8px 0;
   border-radius: 5px;
@@ -65,6 +67,7 @@ button.register{
     background: tomato;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 button:hover{
   background: rgba(122, 30, 30, 0.767);

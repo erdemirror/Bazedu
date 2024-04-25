@@ -10,16 +10,21 @@
     <div class="Huree">
         <img src="baz.png" alt="logo" width="150">
         <p><b>BAZ EDUCATION</b></p>
-                    <p>Банкны апликейшнаар төлөх:</p>
-            <div class="bank-options">
-                <div class="icons">
-                    <a href="https://www.egolomt.mn/"><img src="Golomtbank.jpg" width = "150" alt="Golomtbank"></a>
-                    <a href="https://www.khanbank.com/personal/home/"><img src="Khaanbank.jpg" alt="Khaanbank"></a>
-                    <a href="https://www.statebank.mn/"><img src="Toriinbank.jpg" alt="Toriinbank"></a>
-                </div>
+        <p>Банкны апликейшнаар төлөх:</p>
+        <div class="bank-options">
+            <div class="icons">
+                <a href="javascript:void(0);" onclick="handlePayment()"><img src="Golomtbank.jpg" width="150" alt="Golomtbank"></a>
+                <a href="javascript:void(0);" onclick="handlePayment()"><img src="Khaanbank.jpg" alt="Khaanbank"></a>
+                <a href="javascript:void(0);" onclick="handlePayment()"><img src="Toriinbank.jpg" alt="Toriinbank"></a>
             </div>
-            <a href="Payment.html" class="backbutton">Back</a>
+        </div>
+        <script>
+            function handlePayment() {
+                alert("Payment successful!");
+                window.location.href = "lesson-info-scratch.html";
+            }
+        </script>
+        <a href="Payment.html" class="backbutton">Back</a>
     </div>
-
 </body>
 </html>
