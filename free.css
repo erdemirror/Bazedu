@@ -4,7 +4,7 @@
 a {
   text-decoration: none;
 }
-.container {
+.container-free {
   padding: 10px;
   margin: 30px auto;
   margin-left: 90px;
@@ -13,7 +13,7 @@ a {
   display: flex;
 }
 
-.container img {
+.container-free img {
   width: 400px;
   height: 400px;
   display: block;
