@@ -81,6 +81,19 @@ width:800px;
     margin-top:0px;
 }
 .button-buy button {
+    background-color:#45a049 ;
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button-buy-free button {
     background-color: white;
     border: none;
     color: white;
@@ -94,7 +107,10 @@ width:800px;
     border-radius: 10px;
 }
 
-.button-buy button:hover {
+.button-buy-free button:hover {
+    background-color: white;
+}
+.button-buy button:hover{
     background-color: #45a049;
 }
 .button-buy{
