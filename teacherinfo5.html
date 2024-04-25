@@ -73,6 +73,60 @@
                 <p>
                     Сурах үйл явц нь өөрөө цогц үйлдлүүдээс бүрдэх ба цэгцтэй, дэс дараалалтай байх хэрэгтэй.  Тэдгээр цогц үйлдлүүдийн нэгээхэн хэсэг нь аливаа зүйлийн цаад ажиллах зарчмыг нь ойлгоход оршиж байгаа юм. Тиймээс аливаа зүйлийн суурь ойлголтууд болоод цаад ажиллах зарчмийг ойлгосноор хүүхдүүд маань аль ч салбарт мэргэшихээс үл хамааран ямар ч ажил, асуудлыг шинжлэх ухаанд үндэслэн логик дэс дарааллын дагуу хурдан, оновчтойгоос гадна алдаа гаргах эрсдлээс өөрийгөө бүрэн хамгаалах чадвартай болох юм. Энэхүү дадлыг бий болгохын тулд хичээлийн үеэр аль болох цаад утга учрыг нь таниулах, нэг суурь ойлголттой болгох үүднээс хүүхдүүдтэйгээ чөлөөтэй хэлэлцэх, хамтдаа эргэцүүлэх, хөгжилтэй уур амьсгал бүрдүүлэх дуртай.
                 </p>
+                <br>
+                <br>
+
+                <div class="charts-container">
+        <h3>JavaScript</h3>
+        <div class="chart">
+           
+            <div class="line"></div>
+            <div class="text">20%</div>
+        </div>
+        <h3>Java</h3>
+        <div class="chart">
+            <div class="line"></div>
+            <div class="text">100%</div>
+        </div>
+        <h3>C++</h3>
+        <div class="chart">
+            <div class="line"></div>
+            <div class="text">85%</div>
+        </div>
+        <h3>C#</h3>
+        <div class="chart">
+            <div class="line"></div>
+            <div class="text">50%</div>
+        </div>
+        <h3>Python</h3>
+        <div class="chart">
+            <div class="line"></div>
+            <div class="text">40%</div>
+        </div>
+    </div>
+    <script>
+        // Function to set chart values
+        function setChartValues(percentages) {
+            // Select all chart elements
+            const charts = document.querySelectorAll(".chart");
+
+            // Loop through each chart and set the width of the line
+            charts.forEach(function (chart, index) {
+                const line = chart.querySelector(".line");
+                const text = chart.querySelector(".text");
+                const percentage = percentages[index];
+
+                // Set the width of the line and text content
+                line.style.width = percentage + "%";
+                text.textContent = percentage + "%";
+            });
+        }
+
+        // Set chart values for Page 5
+        const percentagesPage5 = [100, 90, 70, 90, 80];
+        setChartValues(percentagesPage5);
+    </script>
+                
 
             </div>
         </div>

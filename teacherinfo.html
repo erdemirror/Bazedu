@@ -81,34 +81,55 @@
                 
                 
                <div class="charts-container">
-        <!-- Chart 1 -->
+        <h3>JavaScript</h3>
         <div class="chart">
+           
             <div class="line"></div>
             <div class="text">70%</div>
         </div>
-        <!-- Chart 2 -->
+        <h3>Java</h3>
         <div class="chart">
             <div class="line"></div>
             <div class="text">40%</div>
         </div>
-        <!-- Chart 3 -->
+        <h3>C++</h3>
         <div class="chart">
             <div class="line"></div>
             <div class="text">85%</div>
         </div>
-        <!-- Chart 4 -->
+        <h3>C#</h3>
         <div class="chart">
             <div class="line"></div>
             <div class="text">60%</div>
         </div>
-        <!-- Chart 5 -->
+        <h3>Python</h3>
         <div class="chart">
             <div class="line"></div>
             <div class="text">95%</div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // Function to set chart values
+        function setChartValues(percentages) {
+            // Select all chart elements
+            const charts = document.querySelectorAll(".chart");
 
+            // Loop through each chart and set the width of the line
+            charts.forEach(function (chart, index) {
+                const line = chart.querySelector(".line");
+                const text = chart.querySelector(".text");
+                const percentage = percentages[index];
+
+                // Set the width of the line and text content
+                line.style.width = percentage + "%";
+                text.textContent = percentage + "%";
+            });
+        }
+
+        // Set chart values for Page 4
+       const percentagesPage1 = [100, 100, 100, 100, 100];
+        setChartValues(percentagesPage1);
+    </script>
 
             </div>
         </div>
