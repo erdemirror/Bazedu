@@ -1,185 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="button-submit.css">
-    <link rel="stylesheet" href="teacher.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="button-submit.css" />
+    <link rel="stylesheet" href="teacher.css" />
     <title>BAZeducation</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navi">
-            <div class="logo">
-                <a href="Home.html">
-                    <img src="baz.png" alt="logo" width="150">
-                </a>
-                <h1>Bright<br>Academic <br> Zone</h1>
-            </div>
-            <nav>
-                <ul>
-                <li><a href="Home.html">Нүүр</a></li>
-                <li class="dropdown"><a href="classes.html">Анги</a>
-                    <div class="dropdown-content">
-                        <a href="classes.html">Үндсэн сургалт</a>
-                        <a href="freecourse.html">Үнэгүй сургалт</a>
-                      </div>
-                </li>
-                <li><a href="quizblog.html">Танин мэдэхүй</a></li>
-                <li><a href="teachers.html">Бидний тухай</a></li>
-                <li><a href="Login.html">Нэвтрэх</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/baterdem.bazar"><img src="fb.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/erdemirror"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"><img src="youtube.png" alt="YouTube"></a>
-               
-            </div>
-            
+      <div class="navi">
+        <div class="logo">
+          <a href="Home.html">
+            <img src="baz.png" alt="logo" width="150" />
+          </a>
+          <h1>
+            Bright<br />Academic <br />
+            Zone
+          </h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Нүүр</a></li>
+            <li class="dropdown">
+              <a href="classes.html">Анги</a>
+              <div class="dropdown-content">
+                <a href="classes.html">Үндсэн сургалт</a>
+                <a href="freecourse.html">Үнэгүй сургалт</a>
+              </div>
+            </li>
+            <li><a href="quizblog.html">Танин мэдэхүй</a></li>
+            <li><a href="teachers.html">Бидний тухай</a></li>
+            <li><a href="student-section.html">Сурагчийн булан</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/baterdem.bazar"
+            ><img src="fb.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/erdemirror"
+            ><img src="instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://www.youtube.com/channel/UC8ui3JBm7cx2DCLjVGj1vKA"
+            ><img src="youtube.png" alt="YouTube"
+          /></a>
+        </div>
+      </div>
     </header>
     <div class="main-content">
-        <div class="top-content">
-            <img src="homead.png" alt="adver"> 
-        </div>
-        <div class="more-content">
-            <div class="container">
-                <div class="teachers">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="teacher">
-                                <div class="teacher-img">
-                                    <a href="teacherinfo.html">
-                                        <img src="teacher1.jpg" class="w-100 wp-post-image" alt="teacher1">
-                                    </a>
-                                </div>
-                                <div class="teacher-info">
-                                    <h3>
-                                        <a href="teacherinfo.html">Б.Бат-Эрдэм</a>
-                                    </h3>
-                                    <a href="" class="teacher-info--category">Ахлах багш</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Teacher 2 -->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <!-- Teacher card -->
-                            <div class="teacher">
-                                <!-- Teacher image -->
-                                <div class="teacher-img">
-                                    <a href="teacherinfo2.html">
-                                        <img src="teacher2.jpg" class="w-100 wp-post-image" alt="teacher2">
-                                    </a>
-                                </div>
-                                <!-- Teacher info -->
-                                <div class="teacher-info">
-                                    <h3>
-                                        <a href="teacherinfo2.html">М. Зоригт</a>
-                                    </h3>
-                                    <a href="" class="teacher-info--category">Удирдагч багш</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <!-- Teacher card -->
-                            <div class="teacher">
-                                <!-- Teacher image -->
-                                <div class="teacher-img">
-                                    <a href="teacherinfo3.html">
-                                        <img src="teacher3.jpg" class="w-100 wp-post-image" alt="teacher3">
-                                    </a>
-                                </div>
-                                <!-- Teacher info -->
-                                <div class="teacher-info">
-                                    <h3>
-                                        <a href="teacherinfo3.html">А. Болор</a>
-                                    </h3>
-                                    <a href="" class="teacher-info--category">Цагийн багш</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <!-- Teacher card -->
-                            <div class="teacher">
-                                <!-- Teacher image -->
-                                <div class="teacher-img">
-                                    <a href="teacherinfo4.html">
-                                        <img src="teacher4.jpg" class="w-100 wp-post-image" alt="teacher4">
-                                    </a>
-                                </div>
-                                <!-- Teacher info -->
-                                <div class="teacher-info">
-                                    <h3>
-                                        <a href="teacherinfo4.html">Н. Ариунзаяа</a>
-                                    </h3>
-                                    <a href="" class="teacher-info--category">Цагийн багш</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <!-- Teacher card -->
-                            <div class="teacher">
-                                <!-- Teacher image -->
-                                <div class="teacher-img">
-                                    <a href="teacherinfo5.html">
-                                        <img src="teacher5.jpg" class="w-100 wp-post-image" alt="teacher4">
-                                    </a>
-                                </div>
-                                <!-- Teacher info -->
-                                <div class="teacher-info">
-                                    <h3>
-                                        <a href="teacherinfo5.html">Б. Амарбат </a>
-                                    </h3>
-                                    <a href="" class="teacher-info--category">Цагийн багш</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <button class="button" style="vertical-align:middle"><span><a href="teachers.html">Бүх багш нар </a></span></button> 
-        </div>
-    </div>
-</div>
-<div class="ques">
-    <div class="ques1">
+      <div class="top-content">
+        <img src="homead.png" alt="adver" />
+      </div>
+      <div class="more-content">
+        <div class="container">
+          <div class="teachers">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="teacher">
+                  <div class="teacher-img">
+                    <a href="teacherinfo.html">
+                      <img
+                        src="teacher1.jpg"
+                        class="w-100 wp-post-image"
+                        alt="teacher1"
+                      />
+                    </a>
+                  </div>
+                  <div class="teacher-info">
+                    <h3>
+                      <a href="teacherinfo.html">Б.Бат-Эрдэм</a>
+                    </h3>
+                    <a href="" class="teacher-info--category">Ахлах багш</a>
+                  </div>
+                </div>
+              </div>
 
-        <h1>Танд асуулт байна уу?</h1>
-        <p>Бид таны асуултанд хариулахдаа үргэлж таатай байх болно.</p>
+              <!-- Teacher 2 -->
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <!-- Teacher card -->
+                <div class="teacher">
+                  <!-- Teacher image -->
+                  <div class="teacher-img">
+                    <a href="teacherinfo2.html">
+                      <img
+                        src="teacher2.jpg"
+                        class="w-100 wp-post-image"
+                        alt="teacher2"
+                      />
+                    </a>
+                  </div>
+                  <!-- Teacher info -->
+                  <div class="teacher-info">
+                    <h3>
+                      <a href="teacherinfo2.html">М. Зоригт</a>
+                    </h3>
+                    <a href="" class="teacher-info--category">Удирдагч багш</a>
+                  </div>
+                </div>
+              </div>
 
-    </div>
-    <div class="ques2">
-        <div class="first">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <!-- Teacher card -->
+                <div class="teacher">
+                  <!-- Teacher image -->
+                  <div class="teacher-img">
+                    <a href="teacherinfo3.html">
+                      <img
+                        src="teacher3.jpg"
+                        class="w-100 wp-post-image"
+                        alt="teacher3"
+                      />
+                    </a>
+                  </div>
+                  <!-- Teacher info -->
+                  <div class="teacher-info">
+                    <h3>
+                      <a href="teacherinfo3.html">А. Болор</a>
+                    </h3>
+                    <a href="" class="teacher-info--category">Цагийн багш</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <!-- Teacher card -->
+                <div class="teacher">
+                  <!-- Teacher image -->
+                  <div class="teacher-img">
+                    <a href="teacherinfo4.html">
+                      <img
+                        src="teacher4.jpg"
+                        class="w-100 wp-post-image"
+                        alt="teacher4"
+                      />
+                    </a>
+                  </div>
+                  <!-- Teacher info -->
+                  <div class="teacher-info">
+                    <h3>
+                      <a href="teacherinfo4.html">Н. Ариунзаяа</a>
+                    </h3>
+                    <a href="" class="teacher-info--category">Цагийн багш</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <!-- Teacher card -->
+                <div class="teacher">
+                  <!-- Teacher image -->
+                  <div class="teacher-img">
+                    <a href="teacherinfo5.html">
+                      <img
+                        src="teacher5.jpg"
+                        class="w-100 wp-post-image"
+                        alt="teacher4"
+                      />
+                    </a>
+                  </div>
+                  <!-- Teacher info -->
+                  <div class="teacher-info">
+                    <h3>
+                      <a href="teacherinfo5.html">Б. Амарбат </a>
+                    </h3>
+                    <a href="" class="teacher-info--category">Цагийн багш</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="button" style="vertical-align: middle">
+              <span><a href="teachers.html">Бүх багш нар </a></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="lesson" id="math">
+          <div class="image">
+            <img src="html.png" alt="Math Image" />
+          </div>
+          <hr />
+          <div class="info">
+            <h1>Hyper Text Markup Language(HTML)</h1>
+            <h4>Б.Бат-Эрдэм</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="lesson" id="math">
+          <div class="image">
+            <img src="jss.png" alt="Math Image" />
+          </div>
+          <hr />
+          <div class="info">
+            <h1>JavaScript(JS)</h1>
+            <h4>Б.Бат-Эрдэм</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="lesson" id="math">
+          <div class="image">
+            <img src="css.png" alt="Math Image" />
+          </div>
+          <hr />
+          <div class="info">
+            <h1>Cascading Style Sheets</h1>
+            <h4>Б.Бат-Эрдэм</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ques">
+        <div class="ques1">
+          <h1>Танд асуулт байна уу?</h1>
+          <p>Бид таны асуултанд хариулахдаа үргэлж таатай байх болно.</p>
+        </div>
+        <div class="ques2">
+          <div class="first">
             <div class="name">
-            <p>Нэр</p>
-        <input type="text" name="fname" id="fname" maxlength="20" >
+              <p>Нэр</p>
+              <input type="text" name="fname" id="fname" maxlength="20" />
+            </div>
+            <div class="mail">
+              <p>Имэйл</p>
+              <input type="email" name="emails" id="emails" />
+            </div>
+          </div>
+          <p style="color: #747373">Зурвас</p>
+          <textarea id="review" name="review" rows="5" cols="60"></textarea>
+          <button class="button-submit"><span>Илгээх </span></button>
+        </div>
+      </div>
     </div>
-    <div class="mail">
-        <p>Имэйл</p>
-        <input type="email" name="emails" id="emails" >
-    </div>
-    </div>
-        <p style="color:#747373">Зурвас</p>
-        <textarea id="review" name="review" rows="5" cols="60" ></textarea>
-        <button class="button-submit"><span>Илгээх </span></button> 
-    </div>
-    
-</div>
-</div>
-    <button id="scrollToTopBtn" class="button" style="position: fixed; bottom: 20px; right: 20px; display:none;">
-        <span>Scroll to Top</span>
+    <button
+      id="scrollToTopBtn"
+      class="button"
+      style="position: fixed; bottom: 20px; right: 20px; display: none"
+    >
+      <span>Scroll to Top</span>
     </button>
     <script src="up.js"></script>
-    
-    <footer>
-        <p>&copy; 2024 BAZeducation. All rights reserved.</p>
-    </footer>
 
-</body>
+    <footer>
+      <p>&copy; 2024 BAZeducation. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
