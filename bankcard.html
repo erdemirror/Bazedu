@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pay with Bank Card</title>
+    <link rel="stylesheet" href="bankapp.css">
+</head>
+<body>
+    <div class="Huree">
+        <img src="baz.png" alt="logo" width="150">
+        <p><b>BAZ EDUCATION</b></p>
+        <div class="bank-card-info">
+            <p>Enter Your Card Details:</p>
+            <form>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Name on Card" required>
+                <input type="text" placeholder="Expiration Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+            </form>
+            <button class="pay" onclick="handlePayment()">Pay</button>
+        </div>
+        <script>
+            function handlePayment() {
+                alert("Payment successful!");
+                window.location.href = "lesson-info-scratch.html";
+            }
+        </script>
+        </div>
+    </div>
+</body>
+</html>

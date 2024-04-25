@@ -1,0 +1,93 @@
+.bank-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons img {
+    width: 70px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;  
+    padding: 10px;
+  
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: white !important;
+    background: lightgreen;
+    transition: 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+      background-image: url('Paymentbackground.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .Huree{
+    width: 350px;
+    padding: 2rem 0 1rem 0;
+    margin: 50px auto;
+    background: rgba(192, 192, 192, 0.9);
+    filter: brightness(80%);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px;
+  }
+  
+  p{
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+  form input{
+    width: 85%;
+    outline: none;
+    border: none;
+    background: #dfe9f5;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .backbutton {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.backbutton:hover {
+    background-color:#3a3b3c;
+}
+
+.pay {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pay:hover {
+    background-color: #3a3b3c;
+}
+

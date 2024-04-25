@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+      background-image: url('Paymentbackground.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .Huree{
+    width: 350px;
+    padding: 2rem 0 1rem 0;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    filter: brightness(80%);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px;
+  }
+  
+  p{
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bankapp {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bankapp:hover {
+    background-color: #0056b3;
+}
+
+.bankcard {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: tomato;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bankcard:hover {
+    background-color: #d14c00;
+}
