@@ -40,6 +40,10 @@
     align-items: center;
     padding-left:20px;
     padding-right:20px;
+    
+}
+.each-lesson p{
+    cursor: pointer;
 }
 #progress{
   width:100px;
@@ -54,4 +58,11 @@
 }
 .lesson-infos{
     margin-bottom:50px;
+}
+.additional-info {
+    display: none;
+}
+
+.additional-info.show {
+    display: block;
 }
