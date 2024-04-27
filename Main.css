@@ -1,199 +1,194 @@
-body{
-    margin: 0; 
-    padding: 0;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    min-height: 5vh;
-    flex-direction: column;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 5vh;
+  flex-direction: column;
 }
 
-ul { 
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 ul li a {
-    padding : 0 20px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
 }
 .navi {
-    font-family: "Exo 2", sans-serif;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header {
-    background-image: url('back1.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    padding: 10px 0; 
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  background-image: url("/images/back1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .social-icons {
-    margin-top: 10px;
-    display: flex;
+  margin-top: 10px;
+  display: flex;
 }
 .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
 }
 .social-icons a img {
-    width: 30px;
-    height: 30px;
-    border: 2px solid transparent; 
-    border-radius: 50%;
-    transition: border-color 0.3s ease; 
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: border-color 0.3s ease;
 }
 .social-icons a:hover img {
-    border-color: #333; 
+  border-color: #333;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
-.top-content, .bottom-content {
-    flex-grow: 1;
-   
+.top-content,
+.bottom-content {
+  flex-grow: 1;
 }
-
 
 .top-content {
-    position: relative;
-    overflow: auto; 
+  position: relative;
+  overflow: auto;
 }
 
 .top-content img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
-.logo{
-    display: flex;
-    float:left;
+.logo {
+  display: flex;
+  float: left;
 }
 
 .logo h1 {
-    font-family: "Varela Round", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 .bottom-content {
-    background-color: #e0e0e0;
-    flex-basis: 75%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;   
-    min-height: vh;  
+  background-color: #e0e0e0;
+  flex-basis: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: vh;
 }
 
-
-li a::after{
-    content:'';
-    display:block;
-    height:4px;
-    width: 0;
-    background: #101013;
-    transition: all .5s;
+li a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #101013;
+  transition: all 0.5s;
 }
-li a:hover::after{
-width: 100%;
+li a:hover::after {
+  width: 100%;
 }
 footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0; 
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
-.ques{
-    background-color: orange;
-    width:90%;
-    border-radius: 80px;
-    display:flex;
-    margin:10px;
-    padding:80px;
-    margin: auto;
+.ques {
+  background-color: orange;
+  width: 90%;
+  border-radius: 80px;
+  display: flex;
+  margin: 10px;
+  padding: 80px;
+  margin: auto;
 }
-.ques1{
-    font-family: "Varela Round", sans-serif;
-    color:white;
-    margin-top: 30px;
+.ques1 {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  margin-top: 30px;
 }
 .ques1 p {
-    margin-top:30px;
+  margin-top: 30px;
 }
-.ques2{
-    display: flex;
-    flex-direction: column;
-    margin-left:400px;
+.ques2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
 }
-.first{
-    justify-content:space-between;
-    display: flex;
-    color:#747373;
+.first {
+  justify-content: space-between;
+  display: flex;
+  color: #747373;
 }
 @media (max-width: 768px) {
-    .col-sm-6 {
-        flex: 0 0 50%;  
-        max-width: 50%;
-    }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius:10px;
-  }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  float: none;
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  .first{
-    padding-bottom:30px;
-    
-  }
-  #fname{
-    margin-right:5px;
-    padding-right:50px;
-    border-radius:10px;
-    border:0;
-    height: 20px;
-  }
-  #emails{
-    padding-right:50px;
-    border-radius:10px;
-    border:0;
-    height:20px;
-  }
-  #review{
-    border-radius:10px;
-    border:0;
-    height:150px;
-  }
+.first {
+  padding-bottom: 30px;
+}
+#fname {
+  margin-right: 5px;
+  padding-right: 50px;
+  border-radius: 10px;
+  border: 0;
+  height: 20px;
+}
+#emails {
+  padding-right: 50px;
+  border-radius: 10px;
+  border: 0;
+  height: 20px;
+}
+#review {
+  border-radius: 10px;
+  border: 0;
+  height: 150px;
+}
