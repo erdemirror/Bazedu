@@ -27,6 +27,7 @@
 .lessons-list{
     margin-top:20px;
     margin-left:180px;
+    
 }
 .lessons-list h1{
     margin-bottom:20px; 
@@ -65,4 +66,10 @@
 
 .additional-info.show {
     display: block;
+}
+.niit-lessons{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }

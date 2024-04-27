@@ -7,12 +7,11 @@ a {
 .container-free {
   padding: 10px;
   margin: 30px auto;
-  margin-left: 90px;
-  display: inline-block;
   width: 1000px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .container-free img {
   width: 400px;
   height: 400px;
@@ -34,6 +33,7 @@ h1 {
   margin-right: 20px;
   padding: 10px;
   box-sizing: border-box;
+  height:550px;
 }
 
 .lesson:hover img {

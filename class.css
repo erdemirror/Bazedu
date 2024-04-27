@@ -1,13 +1,14 @@
 .logo h1 {
-    margin-top:21.44px;
+    margin-top: 21.44px;
 }
+
 .container {
     padding: 10px;
     margin:30px auto;
-    margin-left: 2px;
-    display: inline-block;
     width: 300px;
     display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .container img {
@@ -15,32 +16,39 @@
     height: 200px; 
     display: block;
     border-radius: 10%;
-        }
-.info,h1{
-    margin-top:0px;
 }
+
+.info, h1 {
+    margin-top: 0;
+}
+
 .info h1, .info h4 {
     margin: 0; 
 }
 
-
 .lesson {
+    width:240px;
+    height:400px;
     border-radius: 10px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
     padding: 10px; 
     box-sizing: border-box;
-    border:4px solid black;
+    border: 4px solid black;
 }
-.lesson img{
-    border:4px solid black;
+
+.lesson img {
+    border: 4px solid black;
 }
+
 .lesson:hover img {
     transform: scale(1.05);
 }
+
 .lesson:hover {
     transform: scale(1.05);
 }
-.info{
+
+.info {
     font-family: "Exo 2", sans-serif;
 }
